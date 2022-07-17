@@ -1,0 +1,138 @@
+h1{
+	font-size: max(8vw, 80px);
+	margin: 0;
+
+	-webkit-touch-callout: none; 
+    -webkit-user-select: none; 
+    -khtml-user-select: none; 
+    -moz-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none;
+}
+
+p{
+	font-size: 32px;
+	margin-left: 5%;
+	margin-right: 5%;
+	margin-top: 0.5em;
+	margin-bottom: 1em;
+}
+
+textarea{
+	margin-top: 1em;
+	margin-bottom: 0.5em;
+	width: 90%;
+	height: 210px;
+	resize: none;
+	border-radius: 10px;
+	font-size: 24px;
+	outline: none;
+	-webkit-touch-callout: none; 
+    -webkit-user-select: none; 
+    -khtml-user-select: none; 
+    -moz-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none;
+}
+
+input[type="radio"]{
+	outline: none;
+
+	-webkit-touch-callout: none; 
+    -webkit-user-select: none; 
+    -khtml-user-select: none; 
+    -moz-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none;
+}
+
+label{
+	font-size: 24px;
+
+	-webkit-touch-callout: none; 
+    -webkit-user-select: none; 
+    -khtml-user-select: none; 
+    -moz-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none;
+}
+
+textarea::-webkit-scrollbar{
+	width: 0;
+}
+
+body{
+	text-align: center;
+	color: white;
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+}
+
+main{
+	animation: animationIn 3s;
+}
+
+hr{
+	border: 0;
+	clear:both;
+	display:block;
+	width: 100%;                
+	background-color:#FFFFFF;
+	height: 1px;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+@keyframes animationIn{
+	from{
+		opacity: 0;
+		transform: translateY(-50px);
+	}
+	to{
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+:root{
+	--link-color: #ffffd9;
+}
+
+a:link {
+  color: var(--link-color);
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:visited {
+  color: var(--link-color);
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #ffff9f;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: var(--link-color);
+  background-color: transparent;
+  text-decoration: underline;
+}
